@@ -12,7 +12,7 @@ function signUpCheck(input, type) {
         regex = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]{6,14}$/;
         errMsg = "6~14자의 영문과 숫자를 포함해야 합니다.";
     } else if (type === "password") {
-        regex = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{12,20}/;
+        regex = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{12,20}$/;
         errMsg = "12~20자의 영문, 숫자, 특수문자를 포함해야 합니다.";
     } else if (type === "passwordCheck") {
         const pwdInput = input.parentElement.previousElementSibling.querySelector("input");
