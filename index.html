@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="container">
+        <article id="loginBox">
+            <h1 class="logo">MOJUK</h1>
+            <form action="">
+                <label for="">
+                    <span class="labelTitle">
+                        아이디
+                        <span class="errorMsg"></span>
+                    </span>
+                    <input type="text" placeholder="영문, 숫자 6~14자" oninput="signUpCheck(this, 'id')">
+                </label>
+
+                <label for="">
+                    <span class="labelTitle">
+                        비밀번호
+                        <span class="errorMsg"></span>
+                    </span>
+                    <input type="password" placeholder="영문, 숫자, 특수문자 12~20자" oninput="signUpCheck(this, 'password')">
+                </label>
+
+                <label for="">
+                    <span class="labelTitle">
+                        비밀번호 확인
+                        <span class="errorMsg"></span>
+                    </span>
+                    <input type="password" placeholder="비밀번호 확인" oninput="signUpCheck(this, 'passwordCheck')">
+                </label>
+                
+
+                <input type="submit" value="회원가입">
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>

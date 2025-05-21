@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Paperlogy';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SpoqaHanSansNeo";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: -0.4px;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#loginBox {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 360px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#loginBox>h1.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    font: bold 38px/1 "Paperlogy";
+    letter-spacing: 1.5px;
+
+    background: linear-gradient(45deg, #2F9D27 0%, #BCE55C 50%, #476600 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-bottom: 30px;
+}
+
+#loginBox>form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#loginBox>form>label {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#loginBox>form>label>span.labelTitle {
+    display: flex;
+    align-items: center;
+    color: #444;
+    font: normal 12px/1 "SpoqaHanSansNeo";
+    margin-bottom: 10px;
+}
+
+#loginBox>form>label>span.labelTitle>span.errorMsg {
+    display: flex;
+    margin-left: 5px;
+    color: rgb(255, 120, 120);
+    font: normal 10px/1 "SpoqaHanSansNeo";
+}
+
+#loginBox>form>input ,
+#loginBox>form>label>input {
+    width: 100%;
+    height: 44px;
+    padding: 5px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    color: #a3a3a3;
+    font: normal 12px/1 "SpoqaHanSansNeo";
+
+}
+
+#loginBox>form>input[type="submit"] {
+    background: #2F9D27;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font: bold 12px/1 "SpoqaHanSansNeo";
+    cursor: pointer;
+}
+
+#loginBox>form>input::placeholder {
+    #a3a3a3
+}
+
+#loginBox>form>input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#loginBox>form>div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #a3a3a3;
+    font: normal 12px/1 "SpoqaHanSansNeo";
+}
