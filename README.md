@@ -8,18 +8,6 @@
 
 입력값이 변경될때마다 `oninput`을 이용하여 `signUpCheck()` 함수가 호출되도록 제작하였습니다.
 
-## 코드드 설명
-```js
-function signUpCheck(input, type) {}
-```
-```html
-<input type="text" oninput="signUpCheck(this, 'id')">
-```
-
-### 매개변수
-- `input`: 현재 입력중인 요소
-- `type`: 검사 할 항목의 타입
-
 ```js
 // signUpCheck 함수 선언 (input: 입력요소, type: 입력란 타입)
 function signUpCheck(input, type) {}
